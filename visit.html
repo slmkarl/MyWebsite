@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Visit Us</title>
+
+	<link rel="stylesheet" href="visit.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+	<section class="header">
+		<nav>
+			<img src="p2.png">
+			<div class="logo">
+			<h1>Balingasag</h1>
+		</div>
+			<div class="nav-links">
+				<ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+		</div>
+		</nav>
+
+			<div class="container">
+		<div class="slide">
+			<div class="item" style="background-image: url(image3.jpg);">
+				<div class="content">
+					<div class="name">St. Rita de Cascia Parish</div>
+					<div class="des">First built by the Jesuits in 1892, the original structure of the church included a wooden upper story with two bell towers on each side.  In the aftermath of World War II, all that remained of the church was the lower story made of brick. When it was rebuilt, the second story was done away with entirely. During World War II, the guerrillas hastily burned the church because Japanese soldiers were stationed there. After the war, only the stone structure was left standing.<br><br>The church as it is today is a curious blend of old and new.  Its original outer brick walls still stand, but to its left is attached a bell tower and parish office of clearly recent vintage, veneered with ceramic tiles meant to match the brick walls of the old church. </div>
+				</div>
+			</div>
+			<div class="item" style="background-image: url(p.jpg);  ">
+				<div class="content">
+					<div class="name">People's Palace</div>
+					<div class="des">The Balingasag People's Palace is a cultural and recreational hub nestled in the heart of Balingasag, a municipality in Misamis Oriental, Philippines. This vibrant community space serves as a gathering point for locals and visitors alike, offering a myriad of amenities and activities. The People's Palace is characterized by lush greenery, inviting walkways, and aesthetically pleasing architecture.<br><br>It provides a serene environment for relaxation, socializing, and family outings. With its well-maintained gardens, play areas, and seating spaces, the Balingasag People's Palace stands as a testament to the town's commitment to fostering community engagement and creating a welcoming atmosphere for all.</div>
+					
+				</div>
+			</div>
+			<div class="item" style="background-image: url(image.jpg);">
+				<div class="content">
+					<div class="name">Jose Pelaez Roa Park</div>
+					<div class="des">Jose Pelaez Roa Park in Balingasag, Misamis Oriental, is a picturesque public park that offers a tranquil escape for locals and visitors alike. Named after Jose Pelaez Roa, a notable figure in Philippine politics, the park provides a serene environment with lush greenery, well-maintained landscapes, and vibrant flowers. Visitors can enjoy leisurely strolls along well-designed pathways, relax on benches, and take in the refreshing atmosphere. The park serves as a popular gathering spot for families, friends, and individuals seeking a peaceful retreat, making it a charming destination within the heart of Balingasag.</div>
+				</div>
+			</div>
+			<div class="item" style="background-image: url(image2.jpg);">
+				<div class="content">
+					<div class="name">Baywalk</div>
+					<div class="des">Balingasag Baywalk is a picturesque waterfront destination nestled in the charming town of Balingasag, Philippines. Offering a serene escape along the coastline, the Baywalk invites visitors to unwind amidst breathtaking views of the sea and the coastal landscape. Lined with palm trees and vibrant greenery, this scenic promenade provides a tranquil setting for leisurely strolls, where locals and tourists alike can enjoy the gentle sea breeze and the soothing sound of waves. With its well-maintained walkways and inviting atmosphere, Balingasag Baywalk is not only a perfect spot for relaxation but also a hub for community gatherings and events, making it a must-visit destination for those seeking a blend of natural beauty and coastal charm.</div>
+				</div>
+			</div>
+			<div class="item" style="background-image: url(image4.jpg);">
+				<div class="content">
+					<div class="name">Memory Square</div>
+					<div class="des">Balingasag Memory Square and the accompanying statue serve as a poignant tribute to the rich heritage and historical significance of Balingasag.The Memory Square is a public space designed to evoke a sense of nostalgia and remembrance, allowing visitors to connect with the town's past</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="button">
+				<button class="prev"><i class='bx bx-chevron-left'></i></button>
+				<button class="next"><i class='bx bx-chevron-right'></i></button>
+			</div>
+	</div>
+
+	<script>
+		var next = document.querySelector('.next')
+var prev = document.querySelector('.prev')
+
+next.addEventListener('click', function(){
+	var items = document.querySelectorAll('.item')
+	document.querySelector('.slide').appendChild(items[0])
+})
+prev.addEventListener('click', function(){
+	var items = document.querySelectorAll('.item')
+	document.querySelector('.slide').prepend(items[items.length - 1])
+})
+	</script>
+	</section>
+</body>
+</html>
